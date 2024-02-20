@@ -8,7 +8,7 @@ const refs = {
   endBlock: document.querySelector('.end-block'),
 };
 
-const COUNT_IMG = 20;
+const COUNT_IMG = 40;
 let lightbox = null;
 let currentPage = 1;
 let options = {
