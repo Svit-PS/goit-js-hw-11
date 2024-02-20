@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(241, 182, 160);
+  background-image: linear-gradient(
+    225deg,
+    rgb(241, 182, 160) 0%,
+    rgb(248, 247, 159) 50%,
+    rgb(177, 250, 149) 100%
+  );
+}
+
+li,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: rgb(155, 245, 119);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.search-form {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  position: relative;
+}
+
+.search-form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 0 60px 0 20px;
+  outline: none;
+}
+
+.search-form .search-btn {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  background: rgb(247, 245, 143);
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.photo-item {
+  /* flex-basis: calc((100% - 90px) / 4); */
+  /* flex-grow: 1; */
+  padding-bottom: 0;
+  width: 270px;
+  height: 250px;
+}
+
+.photo-card {
+  /* outline: blue solid 5px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 5px;
+  border-bottom: 3px solid #2b2626;
+  border-left: 1px solid #2b2626;
+  border-right: 2px solid #2b2626;
+}
+
+.gallery__link {
+  text-decoration: none;
+  height: 100%;
+}
+
+.gallery__link:hover {
+  cursor: zoom-in;
+}
+
+.img-box {
+  width: 100%;
+}
+
+.captionPosition {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.info-item {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
